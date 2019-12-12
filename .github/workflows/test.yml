@@ -19,5 +19,5 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - uses: TERRAFORM_TOKEN=test-token ./
-      with: 
-        milliseconds: 1000
+    - run: |
+        cat ${HOME}/.terraformrc

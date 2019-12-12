@@ -1,7 +1,7 @@
-import * as core from '@actions/core';
-import { templateTerraformCredentials } from './terraform';
+import * as core from '@actions/core'
+import {templateTerraformCredentials} from './terraform'
 
-async function run() {
+async function run(): Promise<void> {
   try {
     await templateTerraformCredentials()
   } catch (error) {
@@ -9,4 +9,4 @@ async function run() {
   }
 }
 
-run();
+run()
